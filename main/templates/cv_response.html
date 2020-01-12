@@ -5,12 +5,16 @@
         <div class="container">
 
             <div class="row mb-5">
-                <h1 class="cover-heading">Extracted skills:</h1>
+                <h4 class="cover-heading">Extracted skills:</h4>
             </div>
-            <div class="container">
-                {% for skill in skills %}
-                    <div class="row"><p>{{ skill }}</p></div>
-                {% endfor %}
+            <div class="row">
+                <p>{{ skills }}</p>
+            </div>
+            <div class="row mb-5">
+                <h4 class="cover-heading">Processing time:</h4>
+            </div>
+            <div class="row">
+                <p>{{ used_time }} seconds</p>
             </div>
 
         </div>
