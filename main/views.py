@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+
+class IndexPage(TemplateView):
+    """
+    Main page of this application.
+    Render form for CV file uploading
+    """
+    template_name = 'index.html'
