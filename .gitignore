@@ -6,6 +6,7 @@
 .idea/
 venv
 nltk_data
+staticfiles
 
 __pycache__
 MANIFEST
