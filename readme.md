@@ -24,6 +24,9 @@ and get responce with listed skills.
 * `source venv/bin/activate`
 * install packages
 * `pip install -r requirements.txt`
+* download nltk packages
+* `python -m nltk.downloader words`  
+* `python -m nltk.downloader stopwords`
 * create tables
 * `python manage.py migrate`
 * collect project static
