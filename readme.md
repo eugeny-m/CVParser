@@ -9,7 +9,7 @@ and get responce with listed skills.
 
 #### Built With:
 
-* Python 3.7
+* Python 3.8.1
 * Django 3.0.2
 
 
@@ -19,7 +19,7 @@ and get responce with listed skills.
 * `git clone https://github.com/eugeny-m/CVParser.git`
 * `cd CVParser`
 * create python environment
-* `python3.7 -m venv venv`
+* `python3.8 -m venv venv`
 * activate venv
 * `source venv/bin/activate`
 * install packages
