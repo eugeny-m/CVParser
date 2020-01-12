@@ -5,6 +5,7 @@
 .tox/
 .idea/
 venv
+ntlk_data
 
 __pycache__
 MANIFEST
