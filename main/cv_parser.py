@@ -34,19 +34,6 @@ class CVParser:
     ):
         nlp = spacy.load('en_core_web_sm')
         self.__skills_file = skills_file
-        self.__details = {
-            'name': None,
-            'email': None,
-            'mobile_number': None,
-            'skills': None,
-            'college_name': None,
-            'degree': None,
-            'designation': None,
-            'experience': None,
-            'company_names': None,
-            'no_of_pages': None,
-            'total_experience': None,
-        }
         self.__resume = resume
         if not isinstance(self.__resume, io.BytesIO):
             ext = os.path.splitext(self.__resume)[1].split('.')[1]
@@ -57,6 +44,7 @@ class CVParser:
         self.__nlp = nlp(self.__text)
         self.__noun_chunks = list(self.__nlp.noun_chunks)
         if not skills_file:
+            # get skills.csv from pyresparser module
             module_path = os.path.dirname(pyresparser.__file__)
             skills_file_name = 'skills.csv'
             self.__skills_file = os.path.join(module_path, skills_file_name)
