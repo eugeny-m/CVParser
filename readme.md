@@ -33,7 +33,7 @@ These instructions will get you a copy of the project up and running on your loc
 * collect project static  
 `python manage.py collectstatic`
 * run server on 127.0.0.1:8000  
-`python manage.py runserver`
+`DJANGO_DEBUG=1 python manage.py runserver`
 
 ## Deployment
 
