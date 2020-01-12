@@ -11,6 +11,13 @@ and get responce with listed skills.
 
 * Python 3.8.1
 * Django 3.0.2
+* spacy 2.2.3
+* nltk 3.4.5
+
+Great thanks to project [PyResparser](https://github.com/OmkarPathak/pyresparser)
+
+Application has config for deploying on heroku server.  
+Temporary hosted on: `https://drwin-tech-cvparser.herokuapp.com`
 
 
 #### Project run
